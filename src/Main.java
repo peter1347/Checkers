@@ -88,7 +88,7 @@ class Main {
                             //diagonal left REV
                         }
                         else if((moveY==playerY-2)&&(moveX==playerX-2)) {
-                            if (board[playerX - 1][playerY - 2] == 2||board[playerX-1][playerY-1]==20) {
+                            if (board[playerX - 1][playerY - 1] == 2||board[playerX-1][playerY-1]==20) {
                                 board[playerX][playerY] = 0;
                                 board[playerX - 1][playerY - 1] = 0;
                                 board[moveX][moveY] = 10;
