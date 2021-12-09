@@ -2,7 +2,7 @@ import java.io.*;
 public class UpdateLastMove{
   public static void update(int[][] board,boolean turn){
     try{
-      FileOutputStream fos = new FileOutputStream("saves/lastMove.txt");
+      FileOutputStream fos = new FileOutputStream("saves/lastMove.ser");
       ObjectOutputStream oos = new ObjectOutputStream(fos);
       Save lastMove = new Save(board,turn);
       oos.writeObject(lastMove);

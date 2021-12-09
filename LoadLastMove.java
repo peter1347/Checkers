@@ -4,7 +4,7 @@ public class LoadLastMove{
   public static int[][] lastBoard;
   public static void undo (){
 try{
-  FileInputStream fis = new FileInputStream("saves/lastMove.txt");
+  FileInputStream fis = new FileInputStream("saves/lastMove.ser");
   ObjectInputStream ois = new ObjectInputStream(fis);
   Save lastMove = (Save) ois.readObject();
   lastBoard = lastMove.board;
