@@ -34,19 +34,19 @@ public class PrintBoard {
 
                 else if (color.isBlack(i, k)) {
                     System.out.print("\u001B[40m");
-                    System.out.print("    ");
+                    System.out.print("   ");
                     System.out.print ("\u001B[0m");
                 }
                 else{
                     System.out.print("\u001B[47m");
-                    System.out.print("    ");
+                    System.out.print("   ");
                     System.out.print ("\u001B[0m");
                 }
             }
             rank --;
             System.out.println();
         }
-        System.out.println("   A   B   C   D   E   F   G   H");
+        System.out.println("   A  B  C  D  E  F  G  H");
     }
 
 }
